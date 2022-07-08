@@ -1,7 +1,7 @@
 # ToDo_List
 It is a kind of Todo List with A Hamster (Yeong soo) by HTML / CSS / JavaScript
 
-## Subscription
+## Description
 Detail.Prototype(22/07/08)
 >
 기본 기능
@@ -14,6 +14,6 @@ Detail.Prototype(22/07/08)
 
 
 
-제작자 블로그 developer_blog[tistory_blog](https://honoluulu-life.tistory.com/)
+제작자 블로그 developer_blog [tistory_blog](https://honoluulu-life.tistory.com/)
 
 
