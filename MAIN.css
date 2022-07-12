@@ -126,5 +126,19 @@ input[type="checkbox"] {
 }
 
 .todo-list .list {
-  margin: 1rem 0;
+  margin: 1rem 1rem;
+}
+
+.todoDiv {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+#inTodo {
+  font-size: 1.5rem;
+}
+
+.re_del {
+  margin-right: 0.5rem;
 }
