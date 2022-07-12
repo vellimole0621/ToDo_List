@@ -1,6 +1,8 @@
+//사용자 이름 설정
+
 var cus_name = document.querySelector("#name").value;
 
-//사용자 이름 설정
+//사용자가 입력한 투두 리스트 값을, 생성한 배열에 저장
 
 var todoList = [];
 
@@ -9,29 +11,31 @@ addBtn.addEventListener("click", addList);
 
 function addList() {
   var todoData = document.querySelector("#subData").value;
-  if (todoData != null) {
-    todoList.push(todoData);
+  if (todoData != "") {
+    todoList.unshift(todoData);
     document.querySelector("#subData").value = "";
     document.querySelector("#subData").focus();
   }
   showList();
 }
-//사용자가 입력한 투두 리스트 값을, 생성한 배열에 저장
 
 function showList() {
-  var list = "<div class='data_lsit'>";
+  var list = "<div id='data_list'>";
   for (var i = 0; i < todoList.length; i++) {
     list +=
-      "<div>" +
+      "<div class = 'todoDiv'><span id='inTodo'>" +
+      "*" +
       todoList[i] +
-      "<button class='close' id=" +
+      "</span><div class='re'><button class='re_del' id=" +
       i +
-      ">삭제</button></div>";
+      ">삭제</button><button class='re_cor' id=" +
+      i +
+      ">수정</button></div></div>";
   }
 
   document.querySelector("#todo-list").innerHTML = list;
 
-  var remove = document.querySelectorAll(".close");
+  var remove = document.querySelectorAll(".re_del");
   for (var i = 0; i < remove.length; i++) {
     remove[i].addEventListener("click", removeList);
   }
